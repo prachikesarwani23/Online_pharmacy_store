@@ -1,0 +1,47 @@
+[
+
+    {
+        "id":1,
+        "name":"Nivea Cocoa Nourish Moisturising Body Lotion, 400 ml",
+        "price":"₹ 275",
+        "offer":"50% OFF",
+        "Image":"https://m.media-amazon.com/images/I/51etqNAxhZL.jpg",
+        "button":"ADD"
+    },
+
+    {
+        "id":2,
+        "name":"Nivea Soft Light Moisturiser Cream, 300 ml",
+        "price":"₹ 275",
+        "offer":"50% OFF",
+        "Image":"https://m.media-amazon.com/images/I/51cXkIfVBtL._AC_UF1000,1000_QL80_.jpg",
+        "button":"ADD"
+    },
+
+    {
+        "id":3,
+        "name":"Nivea Fresh Natural Deodorant Spray, 150 ml",
+        "price":"₹ 142.4",
+        "offer":"20% OFF",
+        "Image":"https://www.jiomart.com/images/product/original/490052703/nivea-fresh-natural-deodorant-150-ml-product-images-o490052703-p490052703-0-202309201920.jpg?im=Resize=(1000,1000)",
+        "button":"ADD"
+    },
+
+    {
+        "id":4,
+        "name":"Nivea Cherry Shine Caring Lip Balm, 4.8 gm",
+        "price":"₹ 208",
+        "offer":"20% OFF",
+        "Image":"https://www.jiomart.com/images/product/original/490180140/nivea-24-hour-melt-in-moisture-caring-lip-balm-cherry-shine-4-8-g-product-images-o490180140-p490180140-0-202203170330.jpg?im=Resize=(420,420)",
+        "button":"ADD"
+    },
+
+    {
+        "id":5,
+        "name":"Nivea Shea Smooth Milk Moisturising Body Lotion 400 ml | Shea Butter With Deep",
+        "price":"₹ 440",
+        "offer":"20% OFF",
+        "Image":"https://m.media-amazon.com/images/I/413vqVyE5rL.jpg",
+        "button":"ADD"
+    }
+]

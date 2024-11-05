@@ -1,0 +1,69 @@
+
+
+[
+    {
+        "id":1,
+        "name":"Ayurveda",
+        "Rowmaterial":15,
+        "categories":"Natural medicine",
+        "image":"https://nationaleczema.org/wp-content/uploads/2020/05/ayurveda.flatlay-scaled.jpg"
+    },
+
+    {
+        "id":2,
+        "name":"Vitamins",
+        "Rowmaterial":15,
+        "categories":"Strong",
+        "image":"https://images.everydayhealth.com/images/digestive-health/essential-vitamins-for-digestive-health-1440x810.jpg"
+    },
+
+    
+    {
+        "id":3,
+        "name":"Skin Care",
+        "Rowmaterial":15,
+        "categories":"Care of skin",
+        "image":"https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2024-06/240610-beauty-awards-2024-skincare-winners-vl-social-91be20.jpg"
+    },
+
+    {
+        "id":4,
+        "name":"Homeopathy",
+        "Rowmaterial":15,
+        "categories":"Natural cure",
+        "image":"https://bsmedia.business-standard.com/_media/bs/img/article/2015-03/13/full/1426237218-4743.jpg?im=FeatureCrop,size=(826,465)"
+    },
+
+    
+    {
+        "id":5,
+        "name":"Body Checkup",
+        "Rowmaterial":15,
+        "categories":"checkup things",
+        "image":"https://www.felixhospital.com/sites/default/files/2022-11/preventive-health-checkup.jpg"
+    },
+
+    {
+        "id":6,
+        "name":"Woman care",
+        "Rowmaterial":15,
+        "categories":"All needs available",
+        "image":"https://i.chaldn.com/_mpimage/womens-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D70645&q=low&v=1"
+    },
+
+    {
+        "id":7,
+        "name":"Hair Care",
+        "Rowmaterial":15 ,
+        "categories":"care products of hair",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVSfqRIr7950vG4CD3w240MVe87L758LMEA&s"
+    },
+
+    {
+        "id":8,
+        "name":"Diabetes",
+        "Rowmaterial":15,
+        "categories":"Medicine of diabetes",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu4zpFWG8HI0NhT8HZLz6oRfLXOConjgQZ9A&s"
+    }
+]

@@ -1,0 +1,83 @@
+[
+    {
+        "id":1,
+        "name":"Cetafhil oily skin cleanser 125ml",
+        "price":"₹ 546.2",
+        "offer":"Get 16% OFF",
+        "image":"https://m.media-amazon.com/images/I/51qf9buO8zL.jpg ",
+        "Button":"BUY NOW",
+        "information":"Discover a breakthrough in skincare with Cetaphil Oily Skin Cleanser. This 125ml cleanser is specially formulated for oily and acne-prone skin, effectively cleansing without over-drying ."
+    },
+
+    {
+        "id":2,
+        "name":"Keanu Stem Cell Based Hair Regrowth Serum 50 ml",
+        "price":"₹ 2656",
+        "offer":"Get 30% OFF",
+        "image":"https://www.netmeds.com/images/product-v1/600x600/1152094/keanu_stem_cell_based_hair_regrowth_serum_50_ml_799054_0_2.jpg",
+        "Button":"BUY NOW",
+       
+        "information":"Clinically Proven Efficacy Our Hair Regrowth Serum has undergone extensive safety and efficacy studies over the past four years, delivering results that exceed expectations. Clinical studies have confirmed its effectiveness in promoting hair regrowth even at advanced stages of hair loss (Stage 6). "
+    },
+
+    {
+        "id":3,
+        "name":"Episoft For Sensitive Skin Cleansing Lotion 250ml",
+        "price":"₹ 545.00",
+        "offer":"Get 9% OFF",
+        "image":"https://www.netmeds.com/images/product-v1/600x600/405930/episoft_for_sensitive_skin_cleansing_lotion_250ml_48692_0_1.jpg",
+        "Button":"BUY NOW",
+      "information":"Keep Episoft cleansing lotion out of sight and reach of children Store at room temperature"
+    },
+
+    {
+        "id":4,
+        "name":"CETAPHIL MOISTURISING Cream 250gm",
+        "price":"₹ 1105.00",
+        "offer":"Get 15% OFF",
+        "image":"https://www.netmeds.com/images/product-v1/600x600/884699/cetaphil_moisturising_cream_250gm_120120_0_8.jpg",
+        "Button":"BUY NOW",
+      "information":"CETAPHIL MOISTURISING Cream is non-comedogenic, meaning it won't clog pores. This feature specially beneficial for those prone to acne or breakouts.The quick absorption technology makes this cream an ideal base for makeup application, creating a smooth canvas for flawless makeup."
+    },
+
+    {
+        "id":5,
+        "name":"Dr. Willmar Schwabe Biofungin Syrup 250 ml",
+        "price":"₹ 592.00",
+        "offer":"Get 30% OFF",
+        "image":"https://www.netmeds.com/images/product-v1/600x600/1091422/dr_willmar_schwabe_biofungin_syrup_250_ml_567122_0_1.jpg",
+        "Button":"BUY NOW",
+  "information":"Dr. Willmar Schwabe Biofungin Syrup 250 ml is a natural and effective nutritional supplement designed to support overall health and well-being. This syrup is formulated with a potent blend of biofungin, a unique combination of essential nutrients and minerals that are beneficial for boosting the immune system and promoting vitality. "
+    },
+
+    {
+        "id":6,
+        "name":"Episoft AC Cream 75gm",
+        "price":"₹ 548.00",
+        "offer":"Get 9% OFF",
+        "image":"https://www.netmeds.com/images/product-v1/600x600/827351/episoft_ac_cream_75gm_0.jpg",
+        "Button":"BUY NOW",
+      "information":"Episoft AC Cream 75gm is a specialized dermatologically tested cream designed to address acne-prone skin. Formulated with clinically proven ingredients, this cream helps in managing acne, reducing inflammation, and preventing future breakouts. The gentle formula is suitable for all skin types and helps in maintaining a clear and healthy complexion."
+    },
+
+    {
+        "id":7,
+        "name":"Swisse Ultiboost Calcium + Vitamin D Tablet 90's",
+        "price":"₹ 1027.00",
+        "offer":"Get 27% OFF",
+        "image":"https://www.netmeds.com/images/product-v1/600x600/905491/swisse_ultiboost_calcium_vitamin_d_tablet_90s_0_1.jpg",
+        "Button":"BUY NOW",
+        "information":"*This product cannot be returned for a refund or exchange.* Mkt: H&H Trading India Pvt Ltd* Country of Origin: Australia"
+    },
+
+    {
+        "id":8,
+        "name":"Relispray 135 gm",
+        "price":"₹ 299.00",
+        "offer":"Get 25% OFF",
+        "image":"https://www.netmeds.com/images/product-v1/600x600/408943/relispray_135_gm_51074_0_2.jpg",
+        "Button":"BUY NOW",
+    "information":"Bid farewell to discomfort with Relispray 135 gm, your trusted companion for fast and effective pain relief. This 135 gm powerhouse is formulated to outrank the competition and alleviate aches, making it the ideal solution for your pain management needs."
+    }
+
+]
