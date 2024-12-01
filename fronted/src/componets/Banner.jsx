@@ -34,7 +34,7 @@ function Banner() {
         </div>
         </div>
         <div className=' order-1 w-full md:w-1/2 ' >
-    <img src={banner}  className="rounded-full size-64 mt-20   " alt="" />
+    <img src={banner}  className="rounded-full size-80 mt-28 w-96 shadow-xxl  " alt="" />
         </div>
       
     </div>

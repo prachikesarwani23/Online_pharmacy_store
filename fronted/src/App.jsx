@@ -1,13 +1,17 @@
 import React from 'react';
 import Home from './Home/home';
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Category from './categories/Category';
 import Product from './Products/Product';
 import SignUp from './componets/SignUp';
 import About from './Abouts/About';
 import Contact from './componets/contact';
+import toast, { Toaster } from 'react-hot-toast';
+import { useAuth } from './contest/AuthProvider';
 
 function App() {
+  const [authUser,setAuthUser]=useAuth();
+  console.log(authUser);
   return (
    <>
    
@@ -18,12 +22,13 @@ function App() {
  
  <Routes>
   <Route path="/" element={<Home/>}/>
-  <Route path="/Categories_page" element={<Category/>}/>
-  <Route path="/Product_page" element={<Product/>}/>
+  <Route path="/Categories_page" element={authUser?<Category/>:<Navigate to="/signup"/>}/>
+  <Route path="/Product_page" element={authUser?<Product/>:<Navigate to="/signup"/>}/>
   <Route path="/about" element={<About/>}/>
-  <Route path="/contact" element={<Contact/>}/>
+  <Route path="/contact" element={authUser? <Contact/>:<Navigate to="/signup"/>}/>
   <Route path="/signup" element={<SignUp/>}/>
   </Routes>
+  <Toaster />
  </div>
     </>
   );

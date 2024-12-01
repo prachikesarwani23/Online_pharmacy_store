@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Login from './Login';
+import { useAuth } from '../contest/AuthProvider';
+import Logout from './Logout';
 
 function Navbar() {
-  const[theme,setTheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
+  const [authUser,setAuthUser]=useAuth();
+  const[theme,setTheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light");
   const element=document.documentElement;
+
+
   useEffect(()=>{
   if(theme==="dark"){
     element.classList.add("dark");
@@ -52,6 +57,7 @@ else{
         MEDVITA
     </a>
   </div>
+  
   <div className="navbar-end space-x-5 dark:bg-slate-900 dark:text-white dark:border">
   <div className="navbar-center hidden lg:flex dark:bg-slate-900 dark:text-white dark:border">
     <ul className="menu menu-horizontal px-1 dark:bg-slate-900 dark:text-white dark:border">
@@ -111,18 +117,26 @@ else{
 
 {/* ...........................upload........................ */}
 
-<div className='ml-20 size-11 '>
+
+  <div className=' '>
 <form >
-  <span for="myfile"  className='text-black cursor-pointer font-bold hover:scale-95 duration-200'>Upload the prescription </span>
-  <input type="file" id="myfile" name="myfile" className='size-28'/>
+  <span for="myfile"  className='text-black cursor-pointer font-bold hover:scale-95 duration-200 dark:bg-slate-900 dark:text-white dark:border text-sm-1'>Prescript</span>
+  <input type="file" id="myfile" name="myfile" className='size-5 text-sm'/>
   <input type="hidden" id="myfile" name="myfile"/>
 </form>
 </div>
+
 {/* ..........................login........................... */}
-  <div className="">
+
+
+{
+  authUser?<Logout/>:
+
+   <div className="">
     <a className="btn bg-black text-white hover:to-white px-4 py-4" onClick={()=>document.getElementById("my_modal_3").showModal()}>Login</a>
     <Login/>
-  </div>
+  </div> 
+  }
 </div>
 </div>
     </div>

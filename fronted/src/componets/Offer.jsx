@@ -1,13 +1,29 @@
-import React from 'react';
-import list_for_offer_card from '../../public/list_for_offer_card.json';
+import React, { useEffect, useState } from 'react';
+// import list_for_offer_card from '../../public/list_for_offer_card.json';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  import Slider from "react-slick";
  import Offercard from './offercard';
+ import axios from "axios"
 function Offer() {
-    const filterData=list_for_offer_card.filter((data)=>data.Button==="BUY NOW");
+  const [up,setmedi]=useState([])
+  useEffect(()=>{
+    const getform=async()=>{
+      try{
+            const res= await axios.get("http://localhost:4001/Pharmacystore/right");
+            console.log(res.data)
+            setmedi(res.data)
+
+      }catch(error){
+console.log(error)
+      }
+    }
+    getform();
+  },[])
+
+    const filterData=up.filter((data)=>data.Button==="BUY NOW");
     
-    const settings = {
+    var settings = {
         dots: true,
         infinite: true,
         slidesToShow: 3,
@@ -15,7 +31,21 @@ function Offer() {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        responsive:[
+          {
+            breakpoint:1024,
+            settings:{
+              slidesToShow:3,slidesToShow:1,infinite:true,dots:true,
+            },
+          },
+          {
+            breakpoint:600,
+            settings:{
+              slidesToShow:2,slidesToShow:1,infinite:true,dots:true,
+            },
+          },
+        ]
       };
   return (
    <>

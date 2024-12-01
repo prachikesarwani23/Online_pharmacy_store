@@ -2,10 +2,29 @@ import React from 'react';
 import Login from './Login';
 import { useForm } from "react-hook-form";
 import {Link} from 'react-router-dom';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 function contact() {
     const { register, handleSubmit,  formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit =async data => {
+      const userInfo={
+        name:data.name,
+        email:data.email,
+        message:data.message,
+      }
+     await axios.post("http://localhost:4001/contactes/contact",userInfo)
+      .then((res)=>{
+        console.log(res.data)
+        if(res.data){
+          toast.success('Feedback sent Successfully');
+        }
+      
+      })
+      .catch((err)=>{
+        toast.error("Feedback not sent" + err);
+      })
+    };
   return (
     <>
     <div>
@@ -22,10 +41,10 @@ function contact() {
         <span className='font-bold'>Name</span>
         <br />
         <input type="text" placeholder='Enter your full name'  className='w-80 px-3 border rounded-md outline-none'
-         {...register("Name", { required: true })}
+         {...register("name", { required: true })}
         />
          <br/>
-         {errors.Name && <span className='text-red-400'>This field is required</span>}
+         {errors.name && <span className='text-red-400'>This field is required</span>}
         <br/>
         <br/>
         <span className='font-bold'>Email</span>
@@ -37,13 +56,13 @@ function contact() {
         {errors.email && <span className='text-red-400'>This field is required</span>}
         <br/>
         <br/>
-        <span className='font-bold'>Your Message</span>
+        <span className='font-bold'>Your Feedback</span>
         <br/>
         <input type="Message" placeholder='Enter your message' className='w-80 px-3 border rounded-md outline-none'
-    {...register("Message", { required: true })}
+    {...register("message", { required: true })}
         />
         <br/>
-        {errors.Message && <span className='text-red-400'>This field is required</span>}
+        {errors.message && <span className='text-red-400'>This field is required</span>}
         <br/>
         <br/>
          </div>

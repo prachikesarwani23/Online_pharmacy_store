@@ -1,9 +1,9 @@
 import React from 'react';
 import Slider from "react-slick";
 
-
 function Product_page() { 
 
+  
 
   const settings = {
     dots: true,
@@ -48,7 +48,7 @@ function Product_page() {
 
  <div >
      
-     <div><h1 className='font-bold text-2xl pb-2 mt-28 px-23 py-34' > Nivea  Complete  SkinCare</h1>
+     <div><h1 className='font-bold text-4xl card-body items-center ml-27 text-center  pb-2 mt-28 px-23 py-34' > Nivea  Complete  SkinCare</h1>
    </div>
 </div>
 {/* ...................card1......................... */}
@@ -160,7 +160,7 @@ function Product_page() {
 
 <div >
     {/* ...............................Auyvadic cards............................  */}
-     <div><h1 className='font-bold text-2xl pb-2 mt-28 px-23 py-34' > Best of Ayuvadic Wellnes</h1>
+     <div><h1 className='font-bold text-4xl card-body items-center ml-27 text-center pb-2 mt-28 px-23 py-34' > Best of Ayuvadic Wellnes</h1>
    </div>
 </div>
 
@@ -267,6 +267,8 @@ function Product_page() {
   </div>
 </div>
 </div>
+
+
 
 </>
 

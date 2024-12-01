@@ -1,12 +1,30 @@
 
-import React from 'react';
-import list from '../../public/list.json';
+import React, { useEffect, useState } from 'react';
+// import list from '../../public/list.json';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Card from './Card';
+import axios from "axios"
+
 function Categories() {
-  const filterData=list.filter((data)=>data.Rowmaterial===15);
+  const [lol,setPharmacy]=useState([])
+  useEffect(()=>{
+    const getbook=async()=>{
+      try{
+            const res= await axios.get("http://localhost:4001/Pharmacystore");
+            console.log(res.data)
+            setPharmacy(res.data)
+
+      }catch(error){
+console.log(error)
+      }
+    }
+    getbook();
+  },[])
+
+  
+  const filterdata=lol.filter((data)=>data.Rowmaterial===15);
 
 
   var settings = {
@@ -52,7 +70,7 @@ function Categories() {
 
     <div className='max-w-screen-2xl container mx-auto mx:px-20 px-4'>
     <Slider {...settings}>
-     {filterData.map((item)=>(
+     {filterdata.map((item)=>(
       <Card item={item} key={item.id}/>
      ))}
       </Slider>
